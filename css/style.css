@@ -11,6 +11,7 @@
 } */
 
 h1 {
+    font-family:"Amaranth";
     font-size: 1.875em;    /* 30px/16px */
     padding: 10px;
     margin-top: 0;
@@ -32,6 +33,10 @@ h3 {
     font-size: 1.4375em; /* 23px/16px */
 }
 
+li {
+    list-style-type: none;
+    text-transform: capitalize;
+}
 
 /* ===============================
         this is my basic Styles  
@@ -63,9 +68,10 @@ h3 {
         This is my Pseudo Class
 ====================================*/
 
-nav {
-    display: ;
+nav a:link {
+    text-decoration: none;
 }
+
 
 
 
