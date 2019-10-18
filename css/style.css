@@ -1,12 +1,74 @@
+/* ===============================
+        this main basic elements  
+====================================*/
+
 * {
     box-sizing: border-box;
 }
 
-h1 {
+/* body {
+    margin: 0;
+} */
 
+h1 {
+    font-size: 1.875em;    /* 30px/16px */
+    padding: 10px;
+    margin-top: 0;
+
+}
+
+h2 {
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+h3 {
+    text-transform: capitalize;
+    padding: 10px;
 }
 
 h2,
 h3 {
-    
+    font-size: 1.4375em; /* 23px/16px */
 }
+
+
+/* ===============================
+        this is my basic Styles  
+====================================*/
+
+
+
+
+/* ===============================
+        My web fonts 
+====================================*/
+
+/* ===============================
+        My container elements 
+====================================*/
+
+.main-header ,
+.hero-banner,
+.main-content,
+.secondary-content {
+    border: orange solid 1px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+/* ===============================
+        This is my Pseudo Class
+====================================*/
+
+nav {
+    display: ;
+}
+
+
+
+/* ===============================
+       This is my media  
+====================================*/
