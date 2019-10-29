@@ -7,8 +7,10 @@
 }
 
 body {
-    margin: auto 0;
+    margin: 0 auto;
     background-color: rgb(250,250,250);
+    width: 100%;
+    line-height: 1.3;
 }
 
 h1 {
@@ -36,15 +38,11 @@ h3 {
     font-size: 1.4375em; /* 23px/16px */
 }
 
-li {
-    list-style-type: none;
-    text-transform: capitalize;
-    background-color: rgb(250, 250, 250);
-    
-}
 p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #7F7F94;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 
 
@@ -52,15 +50,35 @@ p {
         My container elements 
 ====================================*/
 
+.main-header,
+.main-footer {
+    text-align: center;
+}
+
+.nav-style a {
+    text-transform: uppercase;
+    background-color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+.nav-style li {
+    list-style: none;
+}
 
 .primary-content {
     text-align: center;
     background-color: white;
     width: 98%;
+    /* padding-left: 5%;
+    padding-right: 5%;  */
+    padding-bottom: 5%;
+}
+
+.primary-content img {
+    width: 100%;
+    height: 70%;
     padding-left: 5%;
-    padding-right: 5%; 
-    margin: 0 auto;
-    border: red 2px solid;
+    padding-right: 5%;
 }
 
 
@@ -74,6 +92,7 @@ p {
     width: 95%;
     margin: auto;
 }
+
 
 /* ===============================
         Float class 
@@ -91,3 +110,10 @@ p {
 /* ===============================
        This is my media  
 ====================================*/
+@media (min-width: 769px) {
+    .primary-content {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
