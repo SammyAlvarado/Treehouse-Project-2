@@ -43,8 +43,8 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #7F7F94;
     font-size: 1rem;
-    margin-left: 9%;
-    margin-right: 9%;
+    /* margin-left: 9%;
+    margin-right: 9%; */
 }
 
 /* ===============================
@@ -69,9 +69,9 @@ p {
     font-weight: bold;
 }
 
-.main-header {
+/* .main-header {
     padding-bottom: 5%;
-}
+} */
 
 .primary-content {
     text-align: center;
@@ -92,14 +92,14 @@ p {
     padding-bottom: 2%;
 }
 
-.main-header img {
+/* .main-header img {
     width: 100%;
     height: 70%;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 17%;
     padding-right: 17%;
-}
+} */
 
 .primary-content img {
     width: 100%;
@@ -115,6 +115,11 @@ p {
     margin: auto;
 }
 
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
@@ -127,11 +132,25 @@ p {
         min-height: calc(100vh - );
     } */
 
+    p {
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+
     .footer-name,
     .bkt {
         display: inline-block;
         padding-top: 5%;
         padding-bottom: 5%;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 70%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 17%;
+        padding-right: 17%;
     }
     
 
@@ -171,9 +190,52 @@ p {
     }
 }
 
-@media (min-width: 720px) {
-    .hide-t {
-        display: hide; 
+@media (min-width: 521px) and (max-width: 768px) {
+
+    /* body {
+        background-color: blueviolet;
+    } */
+
+    .main-header {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+    
+    h1,
+    .nav-style li {
+        display: inline-block;
+        padding: 0 3%;
+    }
+
+    .about {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        padding-bottom: 5%;
+        margin: 3%;
+    }
+
+    .profile-img {
+        padding-left: 2%;
+        width: 40%;
+        display: inline-block;
+    }
+
+    .title {
+        width: 60%;
+        display: inline-block;
+        margin: 0 0 16px;
+    }
+
+    .profile-img{
+        float: right;
+    }
+
+    .title {
+        float: left;
+    }
+
+    .bkt {
+        display: none;
     }
 
 
