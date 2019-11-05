@@ -10,27 +10,23 @@ body {
     margin: 0 auto;
     background-color: rgb(250,250,250);
     width: 100%;
-    line-height: 1.5;
+    /* line-height: 1.5;
+    text-align: center; */
 }
 
 h1 {
     color: #4A4A4A;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.875rem;    /* 30px/16px */
-    font-weight: 900px;
-    padding-top: 20px;
-    margin-top: 0;
-
 }
 
 h2 {
     text-transform: uppercase;
-    padding: 20px;
+    padding-bottom: 5%;
 }
 
 h3 {
     text-transform: capitalize;
-    padding: 10px;
 }
 
 h2,
@@ -43,76 +39,87 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #7F7F94;
     font-size: 1rem;
-    /* margin-left: 9%;
-    margin-right: 9%; */
+}
+
+p {
+    line-height: 1.7;
+    margin: 7.486% 6.189%;
 }
 
 /* ===============================
         My container elements 
 ====================================*/
 
+.name,
+.main-nav,
+.main-nav li {
+    display: inline;
+}
+
 .main-header,
-.main-footer {
+.main-footer,
+.about,
+.primary-content,
+.secondary-content {
     text-align: center;
 }
 
-.nav-style a {
+.main-header,
+.primary-content,
+.secondary-content {
+    padding-top: 5.897%;
+}
+
+.main-footer {
+    margin: 5% 2%;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    padding: 5% 15% 0;
+}
+
+.primary-content img {
+    width: 100%;
+    height: auto;
+    padding: 1% 4%;
+}
+
+ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.1875rem;
+}
+
+.primary-content {
+    background-color: white;
+}
+
+.t-border {
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 5%;
+    width: 95%;
+    margin: auto;
+}
+
+#footer-nav a {
     text-transform: uppercase;
     background-color: rgb(250, 250, 250);
     text-decoration: none;
 }
 
-.nav-style li {
+#footer-nav li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.3375em;
     list-style: none;
     font-weight: bold;
-}
-
-/* .main-header {
-    padding-bottom: 5%;
-} */
-
-.primary-content {
-    text-align: center;
-    background-color: white;
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 10%;
-}
-
-.secondary-content {
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-.content-space {
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-/* .main-header img {
-    width: 100%;
-    height: 70%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 17%;
-    padding-right: 17%;
-} */
-
-.primary-content img {
-    width: 100%;
-    height: 70%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-
-.t-border {
-    border-bottom: 1px lightgray solid;
-    width: 95%;
-    margin: auto;
 }
 
 .clear:after {
@@ -122,121 +129,67 @@ p {
 }
 
 
-
-
 /* ===============================
-       This is my media  
+       This phone few
 ====================================*/
-@media (max-width: 520px) {
-    /* .sfooter {
-        min-height: calc(100vh - );
-    } */
+@media (min-width: 320px) and (max-width: 568px) {
 
-    p {
-        margin-left: 9%;
-        margin-right: 9%;
+    .main-header ul {
+        padding: 0.897%;
+        width: 0 auto;
+    }
+    
+    .main-header a {
+        display: block;
+        background: white;
+        padding: 3%;
+        margin: 1.5% 3.5%;
     }
 
     .footer-name,
-    .bkt {
-        display: inline-block;
-        padding-top: 5%;
-        padding-bottom: 5%;
+    .bkt,
+    .bkt a {
+        font-weight: bold;
+        /* display: inline-block; */
+        text-decoration: none;
     }
 
-    .profile-img {
-        width: 100%;
-        height: 70%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 17%;
-        padding-right: 17%;
+    .footer-name {
+       margin-right: 30%;
+       width: auto;
     }
+
+    /* .bkt a {
+        margin-left: 25%;
+    } */
+
+    /* .bkt a {
+        text-decoration: none;
+    } */
     
-
-    .main-footer footer-name {
+    /* .main-footer footer-name {
         float: right;
     }
+
     .main-footer bkt {
         float: left;
-    }
+    } */
 
-    .hide {
+    .footer-nav {
         display: none;
         text-transform: uppercase;
         font-weight: bold;
     }
-
-    .nav-style {
-        padding: 4%;
-    }
-    .nav-style li {
-        /* text-align: center; */
-        background: white;
-        margin: 1.7% auto;
-        max-width: 710px;
-    }
-
-    .nav-style a {
-        display: block;
-        background: white;
-        padding: 3%;
-    }
-
-    .primary-content {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 521px) and (max-width: 768px) {
-
-    /* body {
-        background-color: blueviolet;
-    } */
-
-    .main-header {
-        margin-top: 7%;
-        margin-bottom: 7%;
-    }
     
-    h1,
-    .nav-style li {
-        display: inline-block;
-        padding: 0 3%;
-    }
-
-    .about {
-        padding-left: 1.5%;
-        padding-right: 1.5%;
-        padding-bottom: 5%;
-        margin: 3%;
-    }
-
-    .profile-img {
-        padding-left: 2%;
-        width: 40%;
-        display: inline-block;
-    }
-
-    .title {
-        width: 60%;
-        display: inline-block;
-        margin: 0 0 16px;
-    }
-
-    .profile-img{
-        float: right;
-    }
-
-    .title {
-        float: left;
-    }
-
-    .bkt {
-        display: none;
-    }
-
-
 }
+
+
+/* /* ===============================
+       This the tablet view 
+====================================*/
+
+
+
+/* @media (min-width: 569px) and (max-width: 768px) {
+
+} */
